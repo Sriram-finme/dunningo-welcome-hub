@@ -38,7 +38,7 @@ const Hero = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-white/10 rounded-xl blur-lg opacity-30"></div>
             <div className="relative glass-card rounded-xl overflow-hidden border border-white/10">
               <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" 
+                src="/lovable-uploads/9213348a-98c2-4978-95e8-5fbcc9ca6659.png" 
                 alt="Collections AI Dashboard Preview" 
                 className="w-full h-auto"
               />

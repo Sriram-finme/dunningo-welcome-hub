@@ -13,37 +13,37 @@ import { Calendar, Users, BarChart2, MessageSquare, CreditCard } from 'lucide-re
 const screens = [
   {
     title: "Collection Activity Timeline",
-    description: "Track all customer interactions and payment promises in a comprehensive timeline view",
+    description: "Track all customer interactions and payment reminders across channels in a comprehensive timeline view",
     icon: <Calendar className="h-6 w-6 text-white" />,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+    image: "/lovable-uploads/47983ddb-3f3f-483d-8dfa-50382df446af.png",
     alt: "Collection Activity Timeline showing customer interactions"
   },
   {
     title: "Customer Profile Dashboard",
-    description: "Get a 360° view of your customers with detailed profiles and payment history",
+    description: "Get a 360° view of your customers with detailed profiles, contact information and payment history",
     icon: <Users className="h-6 w-6 text-white" />,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+    image: "/lovable-uploads/9213348a-98c2-4978-95e8-5fbcc9ca6659.png",
     alt: "Customer profile dashboard showing payment history"
   },
   {
     title: "Advanced Analytics",
-    description: "Visualize collection performance with AI-driven insights and forecasting",
+    description: "Visualize collection performance with AI-driven insights and forecasting to increase recovery rates",
     icon: <BarChart2 className="h-6 w-6 text-white" />,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+    image: "/lovable-uploads/3ce598c1-9298-4720-9e2f-8de769702d6f.png",
     alt: "Analytics dashboard with collection metrics and charts"
   },
   {
     title: "Multichannel Reminders",
-    description: "Send personalized payment reminders across WhatsApp, SMS, email and voice channels",
+    description: "Send personalized payment reminders across WhatsApp, SMS, email and voice channels with message templates",
     icon: <MessageSquare className="h-6 w-6 text-white" />,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-    alt: "Multichannel messaging interface for payment reminders"
+    image: "/lovable-uploads/5dc65a89-8b26-41d0-88c5-93c009a7d02b.png",
+    alt: "Template library for multichannel payment reminders"
   },
   {
     title: "Payment Processing",
-    description: "Seamless payment collection with multiple options and real-time reconciliation",
+    description: "Seamless payment collection with multiple options and real-time reconciliation for faster settlements",
     icon: <CreditCard className="h-6 w-6 text-white" />,
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+    image: "/lovable-uploads/47983ddb-3f3f-483d-8dfa-50382df446af.png",
     alt: "Payment processing interface with transaction history"
   }
 ];
@@ -80,7 +80,7 @@ const ProductScreens = () => {
                           <img 
                             src={screen.image} 
                             alt={screen.alt}
-                            className="w-full h-48 object-cover rounded-t-lg"
+                            className="w-full h-56 object-cover rounded-t-lg"
                           />
                           <div className="absolute top-4 left-4 z-20 p-2 rounded-full bg-white/10 backdrop-blur-sm">
                             {screen.icon}
