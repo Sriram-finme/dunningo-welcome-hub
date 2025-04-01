@@ -6,44 +6,47 @@ import { Check } from 'lucide-react';
 const pricingPlans = [
   {
     name: "Starter",
-    price: "$9",
-    description: "Perfect for individuals and small projects",
+    price: "$499",
+    description: "Perfect for small collection agencies and startups",
     features: [
-      "Up to 3 projects",
-      "Basic analytics",
-      "24/7 support",
-      "1 team member"
+      "Up to 1,000 accounts",
+      "WhatsApp & SMS channels",
+      "Basic AI segmentation",
+      "Standard reporting",
+      "Email support"
     ],
     isPopular: false,
-    buttonText: "Get Started"
-  },
-  {
-    name: "Business",
-    price: "$29",
-    description: "Ideal for growing teams and businesses",
-    features: [
-      "Unlimited projects",
-      "Advanced analytics",
-      "Priority support",
-      "Up to 10 team members",
-      "Custom workflows",
-      "API access"
-    ],
-    isPopular: true,
     buttonText: "Start Free Trial"
   },
   {
-    name: "Enterprise",
-    price: "$79",
-    description: "For large organizations with advanced needs",
+    name: "Professional",
+    price: "$1,499",
+    description: "Ideal for growing NBFCs and mid-size banks",
     features: [
-      "Unlimited everything",
-      "Enterprise security",
+      "Up to 10,000 accounts",
+      "All digital channels",
+      "Advanced AI psychology",
+      "Performance analytics",
+      "Custom templates",
+      "API access",
+      "Priority support"
+    ],
+    isPopular: true,
+    buttonText: "Sign Up Now"
+  },
+  {
+    name: "Enterprise",
+    price: "Custom",
+    description: "For large financial institutions with complex needs",
+    features: [
+      "Unlimited accounts",
+      "Full omnichannel suite",
+      "Custom AI models",
+      "Advanced analytics & reporting",
+      "Integration support",
       "Dedicated account manager",
-      "Unlimited team members",
-      "Custom integrations",
-      "Advanced permissions",
-      "Custom reporting"
+      "SLA guarantee",
+      "White labeling"
     ],
     isPopular: false,
     buttonText: "Contact Sales"
@@ -52,14 +55,14 @@ const pricingPlans = [
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="py-20 bg-gray-50">
+    <section id="pricing" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold">
-            <span className="gradient-text">Simple Pricing</span>, Powerful Results
+            <span className="text-gradient">Simple Pricing</span>, Powerful Results
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            Choose the plan that works for your business needs
+          <p className="mt-4 text-lg text-gray-400">
+            Choose the plan that works for your collection needs
           </p>
         </div>
         
@@ -68,12 +71,12 @@ const Pricing = () => {
             <div 
               key={index} 
               className={`
-                bg-white rounded-xl border shadow-sm transition-all duration-300 hover:shadow-md overflow-hidden
-                ${plan.isPopular ? 'border-dunningo-purple ring-2 ring-dunningo-purple/20 transform scale-105 md:-translate-y-2' : 'border-gray-200'}
+                glass-card rounded-xl border transition-all duration-300 overflow-hidden
+                ${plan.isPopular ? 'border-white/30 ring-2 ring-white/20 transform scale-105 md:-translate-y-2' : 'border-white/10'}
               `}
             >
               {plan.isPopular && (
-                <div className="bg-dunningo-purple text-white text-center py-2 text-sm font-medium">
+                <div className="bg-white/20 backdrop-blur-md text-white text-center py-2 text-sm font-medium">
                   Most Popular
                 </div>
               )}
@@ -82,12 +85,12 @@ const Pricing = () => {
                 <h3 className="text-xl font-bold">{plan.name}</h3>
                 <div className="mt-4 mb-6">
                   <span className="text-4xl font-bold">{plan.price}</span>
-                  <span className="text-gray-500">/month</span>
+                  <span className="text-gray-400">/month</span>
                 </div>
-                <p className="text-gray-600 mb-6">{plan.description}</p>
+                <p className="text-gray-400 mb-6">{plan.description}</p>
                 
                 <Button 
-                  className={`w-full ${plan.isPopular ? 'bg-dunningo-purple hover:bg-dunningo-purple-dark' : 'bg-gray-800 hover:bg-gray-900'}`}
+                  className={`w-full ${plan.isPopular ? 'glass-button' : 'glass-outline-button'}`}
                 >
                   {plan.buttonText}
                 </Button>
@@ -97,8 +100,8 @@ const Pricing = () => {
                   <ul className="space-y-3">
                     {plan.features.map((feature, i) => (
                       <li key={i} className="flex items-start">
-                        <Check className="h-5 w-5 text-dunningo-purple mr-2 flex-shrink-0" />
-                        <span className="text-gray-600 text-sm">{feature}</span>
+                        <Check className="h-5 w-5 text-white mr-2 flex-shrink-0" />
+                        <span className="text-gray-400 text-sm">{feature}</span>
                       </li>
                     ))}
                   </ul>

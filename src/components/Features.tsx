@@ -1,50 +1,50 @@
 
 import React from 'react';
-import { CheckCircle, BarChart2, Clock, Users, Lock, Zap } from 'lucide-react';
+import { MessageSquare, BarChart2, Brain, UserCheck, Lock, Zap } from 'lucide-react';
 
 const featuresList = [
   {
-    icon: <BarChart2 className="h-6 w-6 text-dunningo-purple" />,
+    icon: <MessageSquare className="h-6 w-6 text-white" />,
+    title: 'WhatsApp-First Approach',
+    description: 'Engage customers on their preferred channel with interactive payment reminders and updates.'
+  },
+  {
+    icon: <Brain className="h-6 w-6 text-white" />,
+    title: 'Psychological AI Engine',
+    description: 'Leverage behavioral science to craft personalized messages that drive faster payments.'
+  },
+  {
+    icon: <BarChart2 className="h-6 w-6 text-white" />,
     title: 'Advanced Analytics',
-    description: 'Gain valuable insights with comprehensive analytics and customizable reports.'
+    description: 'Track collection performance with real-time metrics and AI-powered forecasting.'
   },
   {
-    icon: <Clock className="h-6 w-6 text-dunningo-purple" />,
-    title: 'Time Tracking',
-    description: 'Monitor productivity and manage resources with our intuitive time tracking feature.'
+    icon: <UserCheck className="h-6 w-6 text-white" />,
+    title: 'Customer Segmentation',
+    description: 'Automatically segment customers based on payment behavior and psychographic profiles.'
   },
   {
-    icon: <Users className="h-6 w-6 text-dunningo-purple" />,
-    title: 'Team Collaboration',
-    description: 'Foster teamwork with real-time collaboration tools designed for modern teams.'
-  },
-  {
-    icon: <Lock className="h-6 w-6 text-dunningo-purple" />,
+    icon: <Lock className="h-6 w-6 text-white" />,
     title: 'Enterprise Security',
-    description: 'Keep your data secure with industry-leading security practices and encryption.'
+    description: 'Bank-grade encryption and compliance with all financial data protection regulations.'
   },
   {
-    icon: <Zap className="h-6 w-6 text-dunningo-purple" />,
-    title: 'Workflow Automation',
-    description: 'Eliminate repetitive tasks and focus on what matters with smart automations.'
-  },
-  {
-    icon: <CheckCircle className="h-6 w-6 text-dunningo-purple" />,
-    title: 'Task Management',
-    description: 'Organize and prioritize tasks efficiently with our intuitive management system.'
+    icon: <Zap className="h-6 w-6 text-white" />,
+    title: 'Omnichannel Orchestration',
+    description: 'Seamlessly coordinate collection efforts across WhatsApp, SMS, email, and voice channels.'
   }
 ];
 
 const Features = () => {
   return (
-    <section id="features" className="py-20 bg-gray-50">
+    <section id="features" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold">
-            <span className="gradient-text">Powerful Features</span> For Your Business
+            <span className="text-gradient">Powerful Features</span> For Faster Collections
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            Everything you need to manage your business efficiently in one place
+          <p className="mt-4 text-lg text-gray-400">
+            Everything you need to transform your collection operations
           </p>
         </div>
         
@@ -52,13 +52,13 @@ const Features = () => {
           {featuresList.map((feature, index) => (
             <div 
               key={index} 
-              className="card-highlight p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-md"
+              className="glass-card p-6 rounded-xl border border-white/10 transition-all duration-300 hover:border-white/20"
             >
-              <div className="h-12 w-12 bg-dunningo-purple/10 rounded-lg flex items-center justify-center mb-5">
+              <div className="h-12 w-12 bg-white/10 rounded-lg flex items-center justify-center mb-5 backdrop-blur-md">
                 {feature.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <p className="text-gray-400">{feature.description}</p>
             </div>
           ))}
         </div>
